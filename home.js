@@ -31,7 +31,7 @@ $( document ).ready(function() {
 let frontpageoptionspages = [
     {
         title: "Online Mass",
-        body: "https://youtu.be/7e300pRRiu8"
+        body: "<a href='https://youtu.be/7e300pRRiu8'>Mass Link</a>"
     },
     {
         title: "Spiritual Resources",

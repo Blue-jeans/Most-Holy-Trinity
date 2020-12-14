@@ -14,7 +14,9 @@ form{
     border-radius: 5px;
     height: 34px;
 }
-
+.boxesdiv a{
+    background-color: black;
+}
 header{
     display: flex;
     align-items: center;
