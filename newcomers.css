@@ -1,0 +1,62 @@
+.newcomers-header{
+    padding-top: 25px;
+    text-align: center;
+    background-color: #4486ff;
+    height: 90px;
+    color: white;
+}
+.pathboxes{
+    background-color: #4486ff;
+    margin-left: 20px;
+    height: 100px;
+    width:200px;
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+.boxesdiv1{
+    background-color: #FF90B3;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    padding-top: 50px;
+    
+}
+.textBox{
+    height: 300px;
+    width: 100%;
+    background-color: #FF90B3;
+}
+.pathboxes{
+    cursor: pointer;
+}
+footer{
+    bottom: 0px;
+    width: 100%;
+   
+}
+.miwwleBox{
+    width: 500px;
+    height: 400px;
+    background-color: grey;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    margin: auto;
+    padding-top: 100px;
+}
+input{
+    border: 2px solid white;
+    border-radius: 4px;
+  }
+  .middleDivNew{
+    background-image: url('./images/thebody.jpg');
+    height: 500px;
+    width: 100%;
+  }
+  .middleDivMessage{
+    background-image: url('./images/virgen.jpg');
+    height: 500px;
+    width: 100%;
+  }

@@ -1,0 +1,207 @@
+.left-nav{
+    display: flex;
+    align-items: center;
+   
+}
+form{
+    padding-left: 20px;
+   box-shadow: none;
+}
+.searshbar{
+    border: none;
+    box-shadow: none;
+    background-color: rgb(250, 250, 250);
+    border-radius: 5px;
+    height: 34px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #6E44FF;
+    border-bottom:20px solid #B892FF ;
+    height: 90px;
+    color: white;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #6E44FF;
+    border-bottom:20px solid #B892FF ;
+    height: 90px;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+a:hover{
+  background-color: #383032;
+  
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+li{
+    padding-left: 20px;
+
+}
+.middleDiv{
+    background-image: url('./images/spiritual\ resources.jpg');
+}
+body{
+    background-color: #FFC2E2;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+
+}
+.middleDiv{
+    background-color: white;
+    height: 500px;
+    width: 100%;
+    padding: 50px 50px;
+    color: white;
+}
+
+.middleDiv h1{
+    color: white;
+}
+
+.boxesdiv{
+    background-color: #FF90B3;
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-rows: minmax(200px, 1fr);
+    padding-top: 50px;
+    
+}
+.boxitem{
+    height: 150px;
+    width: 225px;
+    
+   
+}
+
+#bookstore{
+    background-image: url('./images/virgen.jpg');
+    background-size: cover;
+}
+.container{
+    text-align: center;
+    height: 175px;
+}
+.boxesdiv{
+    display: grid;
+    grid-template-columns: 1fr repeat(12, minmax(auto, 60px)) 1fr;
+    grid-gap: 40px;
+    padding: 60px 0;
+}
+
+.text--medium{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #ecf0f1;
+
+}
+
+.cards{
+    /*starts on second column, first is whitespcace*/
+    grid-column: 2 / span 12 ;
+    display: grid;
+    grid-template-columns:  repeat(12, minmax(auto, 60px)) ;
+    grid-gap: 40px;
+
+}
+
+.card{
+    grid-column-end: span 4;
+    display: flex;
+    flex-direction: column;
+    background-color: #EF7A85;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.card:hover{
+    transform: translateY(-7px);
+}
+
+.card_image-container{
+   width: 100%;
+   padding-top: 56.25%; 
+   overflow: hidden;
+   position: relative;
+}
+
+.card_image-container img {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card_content{
+    padding: 20px;
+}
+.card_title{
+    margin-bottom: 20px;
+}
+
+.card_info{
+    display: flex;
+    align-self: end;
+    align-items: center;
+}
+
+.card_price{
+    /*because we are using flex it moves to right */
+    margin-left: auto;
+    padding: 5px 20px;
+    background-color: #383032;
+    border-radius: 20px;
+}
+@media only screen and (max-width: 1000px) {
+    .card{
+        grid-column-end: span 6;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    main {
+        grid-gap:20px;
+    }
+    .card{
+        grid-column-end: span 12;
+    }
+}
+@media only screen and (max-width: 500px) {
+    main {
+        grid-template-columns: 10px repeat(6, 1fr) 10px ;
+        grid-gap:10px;
+    }
+    .cards{
+       grid-column: 2 / span 6;
+       grid-template-columns: repeat(6,1fr); 
+       grid-gap: 20px;
+    }
+    .card{
+        grid-column-end: span 6;
+    }
+    .boxesdiv{
+        align-items: center;
+    }
+}
